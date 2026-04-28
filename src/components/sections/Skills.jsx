@@ -18,6 +18,7 @@ const Skills = ({ isSummary = false, theme }) => {
     "Frontend",
     "Backend",
     "Databases",
+    "Design",
     "Concepts",
     "Tools",
   ];

@@ -11,6 +11,8 @@ import {
   Zap,
   Shield,
   Smartphone,
+  Figma,
+  PenTool,
 } from "lucide-react";
 
 const SKILLS_DATA = [
@@ -24,12 +26,15 @@ const SKILLS_DATA = [
   { name: "React.js", category: "Frontend", icon: <Code size={18} /> },
   { name: "HTML5", category: "Frontend", icon: <Layout size={18} /> },
   { name: "CSS", category: "Frontend", icon: <Layout size={18} /> },
+  { name: "Tailwind CSS", category: "Frontend", icon: <Layout size={18} /> },
 
   // ─── Backend ───
   { name: "Node.js", category: "Backend", icon: <Globe size={18} /> },
   { name: "Express.js", category: "Backend", icon: <Globe size={18} /> },
   { name: "Flask", category: "Backend", icon: <Terminal size={18} /> },
-  { name: "REST API", category: "Backend", icon: <Globe size={18} /> },
+  { name: "FastAPI", category: "Backend", icon: <Terminal size={18} /> },
+  { name: "REST APIs", category: "Backend", icon: <Globe size={18} /> },
+  { name: "Web Sockets", category: "Backend", icon: <Zap size={18} /> },
 
   // ─── Databases ───
   { name: "MongoDB", category: "Databases", icon: <Database size={18} /> },
@@ -41,6 +46,10 @@ const SKILLS_DATA = [
   { name: "Cyber-security", category: "Concepts", icon: <Shield size={18} /> },
   { name: "Intrusion Detection", category: "Concepts", icon: <Shield size={18} /> },
   { name: "Internet of Things", category: "Concepts", icon: <Zap size={18} /> },
+
+  // ─── Design ───
+  { name: "UI/UX Design", category: "Design", icon: <PenTool size={18} /> },
+  { name: "Figma", category: "Design", icon: <Figma size={18} /> },
 
   // ─── Concepts ───
   { name: "Data Structures", category: "Concepts", icon: <Brain size={18} /> },
