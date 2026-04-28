@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+/* Hide native scrollbar — custom one rendered via React */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes horizontal-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-scroll {
+  animation: horizontal-scroll 40s linear infinite;
+  will-change: transform;
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused;
+}
+
+/* Elegant scrollbar for components like the thumbnail gallery */
+.gallery-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.gallery-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+.gallery-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(150, 150, 150, 0.3);
+  border-radius: 10px;
+}
+.gallery-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(150, 150, 150, 0.6);
+}
+.gallery-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(150, 150, 150, 0.3) transparent;
+}
