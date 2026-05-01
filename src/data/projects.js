@@ -24,6 +24,24 @@ import siem_packet_details from "../assets/siem/packet_details.png";
 import siem_alert_details from "../assets/siem/alert_details.png";
 import siem_resolved from "../assets/siem/resolved.png";
 
+import fm_landing from "../assets/flaskmarket/1.png";
+import fm_market from "../assets/flaskmarket/2.png";
+import fm_product_details from "../assets/flaskmarket/3.png";
+import fm_cart from "../assets/flaskmarket/4.png";
+import fm_categories from "../assets/flaskmarket/5.png";
+import fm_deals from "../assets/flaskmarket/6.png";
+
+import cr_1 from "../assets/carracing/1.png";
+import cr_2 from "../assets/carracing/2.png";
+
+import fd_1 from "../assets/finance-dashboard/1.png";
+import fd_2 from "../assets/finance-dashboard/2.png";
+import fd_3 from "../assets/finance-dashboard/3.png";
+
+import pc_1 from "../assets/pychain/1.png";
+import pc_2 from "../assets/pychain/2.png";
+import pc_3 from "../assets/pychain/3.png";
+
 const ALL_PROJECTS = [
   {
     id: "stc",
@@ -285,6 +303,247 @@ const ALL_PROJECTS = [
     demoText: "FutureGuard Live",
     nextProject: "stc",
   },
+
+  {
+    id: "finance-dashboard",
+    category: "noteworthy",
+    title: "Finance Dashboard Backend",
+    desc: "A secure, role-based backend API for managing financial records and analytics, built with Node.js and Express.",
+    tags: ["Node.js", "Express", "SQLite", "JWT", "RBAC"],
+    image: fd_2,
+    repo: "https://github.com/NOTSUMIT0/Finance-Dashboard-Backend",
+
+    year: "2025",
+    role: "Backend Developer",
+    tools: ["Node.js", "Express.js", "SQLite", "better-sqlite3", "bcryptjs", "JWT"],
+    overview: "Developed a robust backend architecture for a finance dashboard featuring Role-Based Access Control (Admin, Analyst, Viewer). The system supports full CRUD operations for financial records, soft deletes to preserve data integrity, and analytical endpoints for categorizing and summarizing expenses over time.",
+    challenge: "Building a secure financial system requires strict access controls and robust data integrity, ensuring users can only access information relevant to their roles without risking accidental permanent data loss.",
+    solution: "Implemented JWT-based authentication with a clear three-tier RBAC system, utilized SQLite for zero-config deployment, and designed the database with soft-delete functionality for all financial records.",
+    contributions: [
+      "Built a complete RESTful API using Node.js and Express",
+      "Implemented JWT authentication and RBAC middleware",
+      "Designed database schema with SQLite and soft-deletes",
+      "Created analytical endpoints for monthly trends and category breakdowns"
+    ],
+    details: [
+      {
+        title: "RESTful API Documentation",
+        content: "Comprehensive Swagger/OpenAPI documentation for all financial and user management endpoints.",
+        points: ["Auto-generated Docs", "Endpoint Testing", "Role-based Access Labels"],
+        image: fd_1,
+      },
+      {
+        title: "Resource Management",
+        content: "Sophisticated backend architecture for managing financial records with soft-delete and filtering capabilities.",
+        points: ["Soft-delete Logic", "Paginated Records", "Secure Authentication"],
+        image: fd_2,
+      },
+      {
+        title: "Robust Data Schemas",
+        content: "Strongly typed database models ensuring data integrity across users and financial transactions.",
+        points: ["User-Record Relations", "Transaction Integrity", "Error Handling Schema"],
+        image: fd_3,
+      }
+    ],
+    features: [
+      "Role-Based Access Control",
+      "JWT Authentication",
+      "Full CRUD for Financial Records",
+      "Soft Delete Functionality",
+      "Data Analytics & Summaries"
+    ],
+    outcomes: [
+      "Delivered a secure, production-ready REST API",
+      "Ensured data safety with soft-delete architecture"
+    ],
+    team: [{ name: "Sumit Kumar", role: "Backend Developer" }],
+    gallery: [fd_1, fd_2, fd_3],
+    demoUrl: null,
+    nextProject: "flask-market",
+  },
+  {
+    id: "flask-market",
+    category: "noteworthy",
+    title: "Universal Cart (FlaskMarket)",
+    desc: "A premium, high-end e-commerce marketplace featuring a professional dark-themed UI, cinematic authentication, and dynamic flash deals.",
+    tags: ["Python", "Flask", "PostgreSQL", "Tailwind CSS"],
+    image: fm_landing,
+    repo: "https://github.com/NOTSUMIT0/FlaskMarket",
+
+    year: "2025",
+    role: "Full Stack Developer",
+    tools: ["Python", "Flask", "SQLAlchemy", "Tailwind CSS", "PostgreSQL", "Bcrypt", "Flask-Login"],
+    overview: "Universal Cart is a high-performance e-commerce platform designed with a modern tech-focused aesthetic. It transitions away from traditional e-commerce layouts toward a cinematic user experience, from a split-screen authentication flow with looping video backgrounds to a dynamic flash deals engine. The platform manages real-time inventory, secure user sessions, and transaction integrity using a robust PostgreSQL backend.",
+    challenge: "Moving beyond traditional e-commerce layouts to create a cinematic, high-performance shopping experience that feels like a premium tech ecosystem while maintaining strict database integrity for multi-item transactions.",
+    solution: "Developed a modular Flask backend with SQLAlchemy for atomic transactions and state management, paired with a responsive Tailwind CSS frontend utilizing glassmorphism and custom CSS animations. Integrated specialized 3D-rendered views for categories and a real-time discount engine.",
+    contributions: [
+      "Designed and implemented a cinematic split-screen authentication system with looping video backgrounds",
+      "Developed a dynamic Flash Deals engine with custom Jinja2 filter logic for real-time price calculations",
+      "Built an intelligent category ecosystem featuring premium 3D renders and glassmorphic depth effects",
+      "Engineered an atomic transaction system for buying and selling items with real-time budget validation",
+      "Integrated PostgreSQL for production-ready persistence and secure session handling via Flask-Login"
+    ],
+    details: [
+      {
+        title: "Cinematic Landing Page",
+        content: "A high-impact entry point featuring a custom dark tech aesthetic, real-time statistics, and a glassmorphic hero section designed for visual excellence.",
+        points: ["Modern Hero Section with CTA", "Platform Stats Visualization", "Glassmorphic UI Architecture"],
+        image: fm_landing,
+      },
+      {
+        title: "Product Ecosystem",
+        content: "A detailed product discovery system featuring modal-driven deep dives into item specifications, pricing, and availability.",
+        points: ["Detailed Item Modals", "Real-time Pricing Information", "Granular Inventory Specs"],
+        image: fm_product_details,
+      },
+      {
+        title: "3D Category Ecosystem",
+        content: "Specialized views for tech gear, each represented by premium 3D renders with deep-shadow effects and smooth hover transitions.",
+        points: ["Smartphones, Laptops, Gaming", "Premium 3D Visual Assets", "Responsive Category Grid"],
+        image: fm_categories,
+      },
+      {
+        title: "Flash Deals Engine",
+        content: "A dedicated promotional hub featuring a high-impact 'Flash Deals' banner with up to 60% off on premium tech gadgets. The page includes a 'Deal of the Day' section highlighting exclusive discounts on top-rated marketplace items.",
+        points: ["Up to 60% Limited Time Offers", "Deal of the Day Curations", "Real-time -20% Discount Badges"],
+        image: fm_deals,
+      },
+      {
+        title: "Unified Marketplace & Cart",
+        content: "The central hub for commerce where users can browse, purchase, and stage items in a real-time shopping cart before commitment.",
+        points: ["Real-time Sidebar Cart", "Atomic Buy/Sell Transactions", "Dynamic Budget Tracking"],
+        image: fm_cart,
+      }
+    ],
+    features: [
+      "Cinematic Split-Screen Auth Flow",
+      "Dynamic Flash Deals Engine",
+      "3D-Rendered Category Ecosystem",
+      "Atomic Transaction & Budget System",
+      "Premium Dark Theme (Tailwind CSS)",
+      "PostgreSQL Production Backend",
+      "Circular Economy Resale Feature"
+    ],
+    outcomes: [
+      "Built a professional-grade e-commerce prototype",
+      "Achieved cinematic UI/UX responsiveness",
+      "Ensured 100% database transaction integrity",
+      "Delivered a visually stunning tech marketplace"
+    ],
+    team: [{ name: "Sumit Kumar", role: "Full Stack Developer" }],
+    gallery: [fm_landing, fm_market, fm_categories, fm_deals, fm_product_details, fm_cart],
+    demoUrl: "https://flaskmarket-lrvq.onrender.com/",
+    demoText: "Live Demo",
+    nextProject: "pychain",
+  },
+  {
+    id: "pychain",
+    category: "noteworthy",
+    title: "PyChain Prototype",
+    desc: "A lightweight Python-based blockchain prototype demonstrating core concepts like Proof-of-Work and decentralized consensus.",
+    tags: ["Python", "Flask", "Blockchain"],
+    image: pc_1,
+    repo: "https://github.com/NOTSUMIT0/PyChain---A-Lightweight-Blockchain-Prototype",
+
+    year: "2025",
+    role: "Developer",
+    tools: ["Python", "Flask", "SHA-256"],
+    overview: "PyChain is a lightweight blockchain implementation built entirely in Python. It demonstrates the fundamental mechanics of blockchain technology, including block creation, hashing, Proof-of-Work mining, and transaction processing through a RESTful API.",
+    challenge: "Understanding the underlying mechanics of blockchain technology can be difficult when obscured by complex frameworks and massive codebases.",
+    solution: "Engineered a minimalistic blockchain from scratch, providing clear and transparent logic for hashing, mining, and consensus, exposed via simple Flask API endpoints.",
+    contributions: [
+      "Implemented block creation and SHA-256 hashing",
+      "Developed Proof-of-Work mining algorithm",
+      "Created Flask endpoints for transactions and mining",
+      "Built simple consensus logic for nodes"
+    ],
+    details: [
+      {
+        title: "Miner Terminal",
+        content: "An interactive Streamlit-based terminal for mining new blocks and monitoring node status in real-time.",
+        points: ["Active Node Status", "PoW Mining Trigger", "Address Management"],
+        image: pc_1,
+      },
+      {
+        title: "Block Explorer",
+        content: "Transparent view of the blockchain ledger, including proof-of-work values, timestamps, and transaction data.",
+        points: ["Hash Visualization", "Block Verification", "Transaction History"],
+        image: pc_2,
+      },
+      {
+        title: "Transaction Handling",
+        content: "Secure interface for creating and broadcasting new transactions to the blockchain network.",
+        points: ["Digital Signatures", "Transaction Validation", "Minimalist UI"],
+        image: pc_3,
+      }
+    ],
+    features: [
+      "SHA-256 Block Hashing",
+      "Proof-of-Work Mining",
+      "RESTful API (Flask)",
+      "Transaction Logging",
+      "Genesis Block Generation"
+    ],
+    outcomes: [
+      "Created a clear educational tool for blockchain concepts",
+      "Successfully implemented PoW algorithm from scratch"
+    ],
+    team: [{ name: "Sumit Kumar", role: "Developer" }],
+    gallery: [pc_1, pc_2, pc_3],
+    demoUrl: null,
+    nextProject: "car-racing",
+  },
+  {
+    id: "car-racing",
+    category: "noteworthy",
+    title: "2D Car Racing",
+    desc: "A 2D top-down car racing game built with Python and Pygame, featuring collision detection and keyboard controls.",
+    tags: ["Python", "Pygame", "Game Dev"],
+    image: cr_1,
+    repo: "https://github.com/NOTSUMIT0/CAR-RACING",
+
+    year: "2025",
+    role: "Game Developer",
+    tools: ["Python", "Pygame"],
+    overview: "A classic 2D top-down racing game developed using Python and the Pygame library. The project demonstrates fundamental game development concepts including sprite rendering, game loop management, collision detection, and user input handling.",
+    challenge: "Creating a smooth gaming experience requires optimizing the game loop, handling real-time continuous user input, and accurately calculating pixel-perfect or bounding-box collisions.",
+    solution: "Utilized Pygame's robust event handling and sprite groups to create an efficient game loop. Implemented custom movement physics and bounding-box collision detection for reliable gameplay mechanics.",
+    contributions: [
+      "Programmed the core game loop and event handling",
+      "Implemented car movement physics and keyboard controls",
+      "Designed track boundaries and collision detection",
+      "Added sprite management and rendering logic"
+    ],
+    details: [
+      {
+        title: "Track Dynamics & Mechanics",
+        content: "Detailed track layout with optimized collision boundaries and smooth car movement physics designed for high-speed maneuvering.",
+        points: ["Track Constraints Logic", "Physics-based Car Handling", "Collision Optimization"],
+        image: cr_1,
+      },
+      {
+        title: "Real-time Dashboard",
+        content: "Integrated HUD (Heads-Up Display) for tracking level progression, elapsed time, and current speed in real-time during gameplay.",
+        points: ["Live Speedometer (px/s)", "Level Progression HUD", "Elapsed Time Tracking"],
+        image: cr_2,
+      }
+    ],
+    features: [
+      "2D Top-Down Racing",
+      "Keyboard Controls",
+      "Collision Detection",
+      "Sprite Management",
+      "Score Tracking"
+    ],
+    outcomes: [
+      "Developed a fully playable 2D racing game",
+      "Gained practical experience with game loops and Pygame"
+    ],
+    team: [{ name: "Sumit Kumar", role: "Game Developer" }],
+    gallery: [cr_1, cr_2],
+    demoUrl: null,
+    nextProject: "stc",
+  }
 ];
 
 /* ── Derived views (no duplication, computed from the single array) ── */

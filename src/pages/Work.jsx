@@ -56,31 +56,20 @@ const WorkPage = ({ theme }) => {
                 className={`group flex items-center gap-6 p-6 rounded-2xl border ${theme.cardBorder} ${theme.cardBg} transition-transform duration-300 hover:scale-[1.02] cursor-pointer`}
                 role="button"
               >
-                {/* NUMBER */}
-                <span
-                  className={`text-7xl font-black opacity-[0.08] ${theme.text} select-none pointer-events-none flex-shrink-0 w-[60px] text-center leading-none`}
-                >
-                  {String(idx + 1).padStart(2, "0")}
-                </span>
-
                 {/* THUMBNAIL */}
-                {project.image ? (
-                  <div className="w-[160px] h-[120px] rounded-xl overflow-hidden flex-shrink-0">
+                <div className="w-[180px] h-[120px] rounded-xl overflow-hidden flex-shrink-0 border border-white/5 bg-black/20">
+                  {project.image ? (
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                  </div>
-                ) : (
-                  <div
-                    className={`w-[160px] h-[120px] rounded-xl flex-shrink-0 flex items-center justify-center border ${theme.cardBorder}`}
-                  >
-                    <span className={`text-3xl font-black opacity-20 ${theme.textMuted}`}>
-                      {project.title.charAt(0)}
-                    </span>
-                  </div>
-                )}
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                       <span className={`text-xs uppercase tracking-widest opacity-20 ${theme.textMuted}`}>No Image</span>
+                    </div>
+                  )}
+                </div>
 
                 {/* CONTENT */}
                 <div className="flex-1 min-w-0">
