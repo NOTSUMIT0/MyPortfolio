@@ -32,7 +32,7 @@ const AboutPage = ({ theme, isDarkMode }) => {
           </h3>
 
           <div
-            className={`space-y-6 text-lg leading-relaxed ${theme.textMuted}`}
+            className={`space-y-6 text-lg md:text-xl leading-relaxed ${theme.textMuted}`}
           >
             <p>
               I am a{" "}
@@ -50,6 +50,18 @@ const AboutPage = ({ theme, isDarkMode }) => {
               </span>
               , a student dropout prediction system (FutureGuard), and 
               LLM-based learning tools.
+            </p>
+
+            <p>
+              Beyond traditional software engineering, I actively learn and work on{" "}
+              <span className={`${theme.text} font-medium`}>
+                embedded and hardware systems
+              </span>
+              . I enjoy building circuits and custom firmware using platforms like{" "}
+              <span className={`${theme.text} font-medium`}>
+                Arduino, FPGA, and Raspberry Pi
+              </span>
+              , interfacing with diverse sensors, actuators, and designing IoT-related systems that merge software logic with physical interaction.
             </p>
 
             <p>

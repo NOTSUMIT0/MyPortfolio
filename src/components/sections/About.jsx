@@ -116,16 +116,15 @@ const About = ({ isSummary = false, theme, isDarkMode }) => {
                       Computer Science Engineering student
                     </span>{" "}
                     with a strong interest in cybersecurity, backend systems, 
-                    Internet of Things, and software development.
+                    IoT/Embedded systems, and software development.
                   </p>
 
                   <p>
-                    I have experience in building real-world projects including an{" "}
+                    I have experience in building real-world software and hardware projects, ranging from an{" "}
                     <span className={`${theme.text} font-medium`}>
                       Intrusion Detection System (IDS)
                     </span>
-                    , a student dropout prediction system (FutureGuard), and 
-                    LLM-based learning tools.
+                    , to custom desktop controllers, student dropout predictors, and LLM-powered educational tools.
                   </p>
 
                   <p>
@@ -133,9 +132,7 @@ const About = ({ isSummary = false, theme, isDarkMode }) => {
                     <span className={`${theme.text} font-medium`}>
                       C++, Python, and system-level programming
                     </span>
-                    , I am seeking opportunities to apply my technical skills 
-                    in solving real-world problems and contributing to 
-                    innovative development teams.
+                    , I enjoy experimenting with microcontrollers, wiring sensor/actuator networks, and building automated desktop companions.
                   </p>
 
                   {isSummary && (
