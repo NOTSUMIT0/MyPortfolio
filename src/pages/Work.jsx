@@ -1,13 +1,13 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Cpu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Reveal from "../components/ui/Reveal";
 import MagneticButton from "../components/ui/MagneticButton";
 import PROJECTS_DATA from "../data/projects";
+import EMBEDDED_PROJECTS from "../data/embeddedProjects";
 import FeaturedProjects from "../components/sections/FeaturedProjects";
 
 const WorkPage = ({ theme }) => {
   const navigate = useNavigate();
-  // Use the 'featured' and 'noteworthy' split from PROJECTS_DATA
   const featuredProjects = PROJECTS_DATA.featured;
   const otherProjects = PROJECTS_DATA.noteworthy;
 
@@ -15,10 +15,7 @@ const WorkPage = ({ theme }) => {
     <div className="pt-40 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* FEATURED SECTION */}
-        <FeaturedProjects 
-          projects={featuredProjects} 
-          theme={theme} 
-        />
+        <FeaturedProjects projects={featuredProjects} theme={theme} />
 
         {/* ARCHIVE / ALL PROJECTS HEADING */}
         <div className="mt-32 mb-16">
@@ -34,8 +31,9 @@ const WorkPage = ({ theme }) => {
               Other <span className={`${theme.accent} italic`}>Projects</span>
             </h3>
             <p className={`text-lg ${theme.textMuted} max-w-xl`}>
-              A comprehensive archive of deep dives into the systems I've architected, the models I've
-              trained, and the experiments I've shipped.
+              A comprehensive archive of deep dives into the systems I've
+              architected, the models I've trained, and the experiments I've
+              shipped.
             </p>
           </Reveal>
         </div>
@@ -66,7 +64,11 @@ const WorkPage = ({ theme }) => {
                     />
                   ) : (
                     <div className="w-full h-full flex items-center justify-center">
-                       <span className={`text-xs uppercase tracking-widest opacity-20 ${theme.textMuted}`}>No Image</span>
+                      <span
+                        className={`text-xs uppercase tracking-widest opacity-20 ${theme.textMuted}`}
+                      >
+                        No Image
+                      </span>
                     </div>
                   )}
                 </div>
@@ -74,9 +76,7 @@ const WorkPage = ({ theme }) => {
                 {/* CONTENT */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-start justify-between gap-4 mb-2">
-                    <h4
-                      className={`text-lg font-bold ${theme.text}`}
-                    >
+                    <h4 className={`text-lg font-bold ${theme.text}`}>
                       {project.title}
                     </h4>
                     <span
@@ -115,6 +115,102 @@ const WorkPage = ({ theme }) => {
             </Reveal>
           ))}
         </div>
+
+        {/* ═══════════════════════════════════════════
+            EMBEDDED / HARDWARE PROJECTS SECTION
+            ═══════════════════════════════════════════ */}
+        {EMBEDDED_PROJECTS.length > 0 && (
+          <>
+            <div className="mt-32 mb-16">
+              <Reveal>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 mb-4">
+                  <Cpu size={14} className="text-green-400" />
+                  <span className="text-xs font-bold uppercase tracking-[0.15em] text-green-400">
+                    Hardware Lab
+                  </span>
+                </div>
+                <h3
+                  className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ${theme.text}`}
+                >
+                  Embedded{" "}
+                  <span className={`${theme.accent} italic`}>Projects</span>
+                </h3>
+                <p className={`text-lg ${theme.textMuted} max-w-xl`}>
+                  Hands-on hardware builds — Arduino, sensors, motors, and
+                  microcontrollers brought to life through circuits and code.
+                </p>
+              </Reveal>
+            </div>
+
+            <div className="space-y-6">
+              {EMBEDDED_PROJECTS.map((project, idx) => (
+                <Reveal key={project.id} delay={idx * 60}>
+                  <div
+                    onClick={() => {
+                      navigate(`/embedded/${project.id}`);
+                      window.scrollTo(0, 0);
+                    }}
+                    className={`group flex items-center gap-6 p-6 rounded-2xl border ${theme.cardBorder} ${theme.cardBg} transition-transform duration-300 hover:scale-[1.02] cursor-pointer`}
+                    style={{
+                      borderLeft: "3px solid",
+                      borderLeftColor: "rgba(74,222,128,0.4)",
+                    }}
+                    role="button"
+                  >
+                    {/* THUMBNAIL */}
+                    <div className="w-[180px] h-[120px] rounded-xl overflow-hidden flex-shrink-0 border border-green-500/10 bg-green-500/5 flex items-center justify-center">
+                      {project.images && project.images.length > 0 ? (
+                        <img
+                          src={project.images[0]}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                      ) : (
+                        <Cpu size={36} className="text-green-500/30" />
+                      )}
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-4 mb-2">
+                        <h4 className={`text-lg font-bold ${theme.text}`}>
+                          {project.title}
+                        </h4>
+                        <span
+                          className={`text-sm font-medium ${theme.textMuted} flex-shrink-0 hidden sm:block`}
+                        >
+                          {project.year}
+                        </span>
+                      </div>
+                      <p
+                        className={`text-sm leading-relaxed ${theme.textMuted} mb-3 line-clamp-2`}
+                      >
+                        {project.desc}
+                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        {project.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border border-green-500/20 text-green-400"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* ARROW ICON */}
+                    <MagneticButton
+                      className={`p-3 rounded-full ${theme.btnSecondary} transition-all flex-shrink-0 opacity-0 group-hover:opacity-100`}
+                    >
+                      <ArrowUpRight size={18} />
+                    </MagneticButton>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

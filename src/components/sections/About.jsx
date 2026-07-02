@@ -8,7 +8,7 @@ import {
   Briefcase,
 } from "lucide-react";
 
-import profileImg from "../../assets/me.webp";
+import profileImg from "../../assets/happy_gif.gif";
 
 import Reveal from "../ui/Reveal";
 import MagneticButton from "../ui/MagneticButton";

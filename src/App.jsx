@@ -13,6 +13,7 @@ import Work from "./pages/Work";
 import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
 import Skills from "./components/sections/Skills";
+import EmbeddedProjectDetail from "./pages/EmbeddedProjectDetail";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -64,6 +65,10 @@ export default function App() {
           <Route
             path="/project/:projectId"
             element={<ProjectDetail theme={theme} isDarkMode={isDarkMode} />}
+          />
+          <Route
+            path="/embedded/:projectId"
+            element={<EmbeddedProjectDetail theme={theme} isDarkMode={isDarkMode} />}
           />
         </Routes>
       </main>

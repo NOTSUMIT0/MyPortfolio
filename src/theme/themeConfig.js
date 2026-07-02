@@ -1,6 +1,6 @@
 const themeConfig = {
   light: {
-    bg: "bg-[linear-gradient(to_bottom,#F5E3D0,50%,#F0D6C8,100%,#E6C8D1)]", // Pure CSS gradient to prevent Tailwind from/to variables affecting buttons
+    bg: "bg-[#FAFAFA]",
 
     // TEXT
     text: "text-neutral-800",
@@ -24,13 +24,6 @@ const themeConfig = {
     accentBorderHover: "hover:border-[#C2410C]/50",
     accentShadow: "shadow-[#C2410C]/30",
 
-    // DECOR
-    blob1: "bg-[#E8C09E]", // Deeper warm cream/peach
-    blob2: "bg-[#DEACBA]", // Deeper soft dusty pink
-    blob3: "bg-[#E6BCAE]", // Deeper warm blush/cream
-
-    spotlight: "234, 88, 12",
-
     navHoverBg: "hover:bg-orange-100/70",
     navHoverText: "hover:text-neutral-900",
     navActiveBg: "bg-orange-200/60",
@@ -53,10 +46,6 @@ const themeConfig = {
     accentHover: "hover:bg-orange-600",
     accentBorderHover: "hover:border-orange-500/50",
     accentShadow: "shadow-orange-500/30",
-    blob1: "bg-orange-900/40",
-    blob2: "bg-rose-900/30",
-    blob3: "bg-indigo-900/30",
-    spotlight: "255, 255, 255",
     navHoverBg: "hover:bg-neutral-800/60",
     navHoverText: "hover:text-neutral-100",
   },

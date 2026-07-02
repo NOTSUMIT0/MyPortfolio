@@ -103,12 +103,9 @@ const NavBar = ({ theme, isDarkMode, toggleTheme }) => {
           className="flex-shrink-0 cursor-pointer group"
           onClick={() => handleNav("/")}
         >
-          <span className={`text-xl font-bold tracking-tighter ${theme.text}`}>
-            Sumit
-            <span className={`${theme.accent} group-hover:px-1 transition-all`}>
-              .
-            </span>
-            Kumar
+          <span className="text-lg md:text-xl font-bold tracking-tight select-none">
+            <span className={theme.text}>Sumit</span>
+            <span className={`${theme.textMuted} font-normal ml-1.5`}>Kumar</span>
           </span>
         </div>
 

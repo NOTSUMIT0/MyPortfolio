@@ -8,7 +8,7 @@ const Home = ({ theme, isDarkMode }) => {
   return (
     <>
       <div data-section="Hero">
-        <Hero theme={theme} />
+        <Hero theme={theme} isDarkMode={isDarkMode} />
       </div>
       <div data-section="About">
         <About

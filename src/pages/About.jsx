@@ -9,18 +9,6 @@ const EDUCATION_DATA = [
     institution: "Chandigarh Group of Colleges (CGC), Landran",
     period: "2023 - Present",
     desc: "Focused on software development, data structures, algorithms, and applied machine learning. Building real-world projects including IDS and prediction systems.",
-  },
-  {
-    degree: "12th Standard",
-    institution: "KV 33 FAD Dappar, Mohali, Punjab",
-    period: "2022 - 2023",
-    desc: "Completed Senior Secondary education.",
-  },
-  {
-    degree: "10th Standard",
-    institution: "KV 33 FAD Dappar, Mohali, Punjab",
-    period: "2020 - 2021",
-    desc: "Completed Secondary education.",
   }
 ];
 

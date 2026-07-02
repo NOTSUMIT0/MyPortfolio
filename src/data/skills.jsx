@@ -17,10 +17,10 @@ import {
 
 const SKILLS_DATA = [
   // ─── Languages ───
+  { name: "C", category: "Languages", icon: <Code size={18} /> },
   { name: "C++", category: "Languages", icon: <Code size={18} /> },
   { name: "Python", category: "Languages", icon: <Terminal size={18} /> },
   { name: "JavaScript", category: "Languages", icon: <Code size={18} /> },
-  { name: "SQL", category: "Languages", icon: <Database size={18} /> },
 
   // ─── Frontend ───
   { name: "React.js", category: "Frontend", icon: <Code size={18} /> },
@@ -37,6 +37,7 @@ const SKILLS_DATA = [
   { name: "Web Sockets", category: "Backend", icon: <Zap size={18} /> },
 
   // ─── Databases ───
+  { name: "SQL", category: "Databases", icon: <Database size={18} /> },
   { name: "MongoDB", category: "Databases", icon: <Database size={18} /> },
   { name: "MySQL", category: "Databases", icon: <Database size={18} /> },
   { name: "PostgreSQL", category: "Databases", icon: <Database size={18} /> },
