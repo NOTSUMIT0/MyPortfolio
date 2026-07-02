@@ -123,12 +123,6 @@ const WorkPage = ({ theme }) => {
           <>
             <div className="mt-32 mb-16">
               <Reveal>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-green-500/30 bg-green-500/10 mb-4">
-                  <Cpu size={14} className="text-green-400" />
-                  <span className="text-xs font-bold uppercase tracking-[0.15em] text-green-400">
-                    Hardware Lab
-                  </span>
-                </div>
                 <h3
                   className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ${theme.text}`}
                 >
@@ -151,14 +145,10 @@ const WorkPage = ({ theme }) => {
                       window.scrollTo(0, 0);
                     }}
                     className={`group flex items-center gap-6 p-6 rounded-2xl border ${theme.cardBorder} ${theme.cardBg} transition-transform duration-300 hover:scale-[1.02] cursor-pointer`}
-                    style={{
-                      borderLeft: "3px solid",
-                      borderLeftColor: "rgba(74,222,128,0.4)",
-                    }}
                     role="button"
                   >
                     {/* THUMBNAIL */}
-                    <div className="w-[180px] h-[120px] rounded-xl overflow-hidden flex-shrink-0 border border-green-500/10 bg-green-500/5 flex items-center justify-center">
+                    <div className="w-[180px] h-[120px] rounded-xl overflow-hidden flex-shrink-0 border border-white/5 bg-black/20 flex items-center justify-center">
                       {project.images && project.images.length > 0 ? (
                         <img
                           src={project.images[0]}
@@ -166,7 +156,7 @@ const WorkPage = ({ theme }) => {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                       ) : (
-                        <Cpu size={36} className="text-green-500/30" />
+                        <Cpu size={36} className={`${theme.textMuted} opacity-20`} />
                       )}
                     </div>
 
@@ -191,7 +181,7 @@ const WorkPage = ({ theme }) => {
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
-                            className="px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border border-green-500/20 text-green-400"
+                            className={`px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider border ${theme.cardBorder} ${theme.accent}`}
                           >
                             {tag}
                           </span>
