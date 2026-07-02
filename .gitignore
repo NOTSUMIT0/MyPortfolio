@@ -27,4 +27,4 @@ dist-ssr
 .env.*.local
 
 # Ignore large hardware project videos
-src/assets/**/*.mp4
+**/*.mp4

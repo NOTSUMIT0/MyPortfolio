@@ -6,12 +6,10 @@
 import main_circuit from "../assets/Embedded/Intrusion Detection/main_circuit.jpg";
 import pic1 from "../assets/Embedded/Intrusion Detection/pic1.jpg";
 import pic2 from "../assets/Embedded/Intrusion Detection/pic2.jpg";
-import video from "../assets/Embedded/Intrusion Detection/video.mp4";
 
 // Project 2: App Control by Joystick
 import app_pic1 from "../assets/Embedded/App Control/pic1.jpg";
 import app_pic2 from "../assets/Embedded/App Control/pic2.png";
-import app_video from "../assets/Embedded/App Control/video.mp4";
 
 const EMBEDDED_PROJECTS = [
   {
@@ -48,7 +46,7 @@ const EMBEDDED_PROJECTS = [
     ],
 
     // Media assets
-    video: video,
+    video: "/assets/Embedded/Intrusion Detection/video.mp4",
     images: [main_circuit, pic1, pic2],
     gallery: [main_circuit, pic1, pic2],
 
@@ -99,7 +97,7 @@ const EMBEDDED_PROJECTS = [
     ],
 
     // Media assets
-    video: app_video,
+    video: "/assets/Embedded/App Control/video.mp4",
     images: [app_pic1, app_pic2],
     gallery: [app_pic1, app_pic2],
 
