@@ -21,4 +21,4 @@ My personal developer portfolio built with React and Vite, showcasing my project
 
 ## Live Website
 
-🌐 https://sumitkumar.pages.dev/
+https://sumitkumar.pages.dev/
