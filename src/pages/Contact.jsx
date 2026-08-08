@@ -16,13 +16,10 @@ const ContactPage = ({ theme }) => {
     e.preventDefault();
     setStatus("sending");
 
-    // Load EmailJS credentials from .env file with fallback defaults
-    const serviceID =
-      import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_zue7mph";
-    const templateID =
-      import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_4mdphr8";
-    const publicKey =
-      import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "6Lf-ntCgnhfnozOb9";
+    // Load EmailJS credentials from .env file
+    const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     const templateParams = {
       from_name: form.name,
