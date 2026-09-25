@@ -27,7 +27,7 @@ const NavBar = ({ theme, isDarkMode }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (location.pathname.startsWith('/project/')) {
+      if (location.pathname.startsWith('/project/') || location.pathname.startsWith('/embedded/')) {
         // Hero section is ~90vh. Navbar overlaps white bg after scrolling past it.
         if (window.scrollY > window.innerHeight * 0.85) {
           setIsScrolledIntoWhite(true);
@@ -58,7 +58,7 @@ const NavBar = ({ theme, isDarkMode }) => {
   // Recalculate active sliding pill position whenever path changes
   useEffect(() => {
     const activeIdx = navItems.findIndex(
-      (item) => item.path === location.pathname || (item.path === "/work" && location.pathname.startsWith("/project"))
+      (item) => item.path === location.pathname || (item.path === "/work" && (location.pathname.startsWith("/project") || location.pathname.startsWith("/embedded")))
     );
     if (activeIdx !== -1 && tabsRef.current[activeIdx]) {
       const el = tabsRef.current[activeIdx];
@@ -138,7 +138,7 @@ const NavBar = ({ theme, isDarkMode }) => {
             {navItems.some(
               (item) =>
                 item.path === location.pathname ||
-                (item.path === "/work" && location.pathname.startsWith("/project"))
+                (item.path === "/work" && (location.pathname.startsWith("/project") || location.pathname.startsWith("/embedded")))
             ) && (
               <div
                 className={`absolute top-1.5 bottom-1.5 rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] ${
@@ -157,7 +157,7 @@ const NavBar = ({ theme, isDarkMode }) => {
             {navItems.map((item, idx) => {
               const isActive =
                 location.pathname === item.path ||
-                (item.path === "/work" && location.pathname.startsWith("/project"));
+                (item.path === "/work" && (location.pathname.startsWith("/project") || location.pathname.startsWith("/embedded")));
               return (
                 <button
                   key={item.label}
