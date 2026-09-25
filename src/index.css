@@ -4,6 +4,21 @@
 html {
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background-color: #FAFAFA;
+}
+html.dark {
+  background-color: #0A0A0A;
+}
+body {
+  background-color: inherit;
+}
+
+.font-bebas {
+  font-family: 'Bebas Neue', 'League Gothic', sans-serif;
+}
+
+.font-instrument {
+  font-family: 'Instrument Serif', Georgia, serif;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -46,4 +61,22 @@ html::-webkit-scrollbar {
 .gallery-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: rgba(150, 150, 150, 0.3) transparent;
+}
+
+@keyframes shutterDown {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.3) translateY(-12px);
+  }
+  70% {
+    transform: scaleY(1.03) translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1) translateY(0);
+  }
+}
+
+.animate-shutterDown {
+  animation: shutterDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }

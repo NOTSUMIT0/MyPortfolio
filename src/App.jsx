@@ -4,15 +4,12 @@ import themeConfig from "./theme/themeConfig";
 
 import NavBar from "./components/layout/NavBar";
 import AnimatedBackground from "./components/layout/AnimatedBackground";
-
-import ScrollTimeline from "./components/ui/ScrollTimeline";
+import Footer from "./components/layout/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
-import Contact from "./pages/Contact";
 import ProjectDetail from "./pages/ProjectDetail";
-import Skills from "./components/sections/Skills";
 import EmbeddedProjectDetail from "./pages/EmbeddedProjectDetail";
 
 export default function App() {
@@ -38,11 +35,6 @@ export default function App() {
         toggleTheme={() => setIsDarkMode(!isDarkMode)}
       />
 
-      <ScrollTimeline
-        isDarkMode={isDarkMode}
-        showBlob={location.pathname === "/"}
-      />
-
       <main className="relative z-10">
         <Routes>
           <Route
@@ -54,14 +46,9 @@ export default function App() {
             element={<About theme={theme} isDarkMode={isDarkMode} />}
           />
           <Route
-            path="/skills"
-            element={<Skills theme={theme} />}
-          />
-          <Route
             path="/work"
             element={<Work theme={theme} />}
           />
-          <Route path="/contact" element={<Contact theme={theme} />} />
           <Route
             path="/project/:projectId"
             element={<ProjectDetail theme={theme} isDarkMode={isDarkMode} />}
@@ -72,6 +59,12 @@ export default function App() {
           />
         </Routes>
       </main>
+
+      <Footer
+        theme={theme}
+        isDarkMode={isDarkMode}
+        toggleTheme={() => setIsDarkMode(!isDarkMode)}
+      />
     </div>
   );
 }

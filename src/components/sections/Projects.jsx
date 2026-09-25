@@ -125,13 +125,13 @@ const Projects = ({ isSummary = false, theme }) => {
         <Reveal>
           <div className="flex items-end justify-between mb-20">
             <div>
-              <h3 className={`text-xs font-bold uppercase tracking-[0.2em] mb-2 ${theme.accent}`}>
+              <h3 className={`text-xs font-bold uppercase tracking-[0.2em] mb-2 ${theme.textMuted}`}>
                 Portfolio
               </h3>
               <h2
                 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-4 ${theme.text}`}
               >
-                Selected <span className={`${theme.accent} italic`}>Work</span>
+                Selected <span className="italic font-light">Work</span>
               </h2>
               <p className={theme.textMuted}>
                 A collection of projects that define my career.
@@ -185,7 +185,7 @@ const Projects = ({ isSummary = false, theme }) => {
                     ))}
                   </div>
                   <h3
-                    className={`text-4xl md:text-5xl font-bold mb-6 ${theme.text} group-hover:${theme.accent} transition-colors`}
+                    className={`text-4xl md:text-5xl font-bold mb-6 transition-colors duration-300 ${theme.textMuted} group-hover:${theme.text}`}
                   >
                     {project.title}
                   </h3>

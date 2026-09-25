@@ -91,11 +91,11 @@ const FeaturedProjects = ({ projects, theme }) => {
   return (
     <div className="mb-24">
       <Reveal>
-        <h2 className={`text-xs font-bold uppercase tracking-[0.2em] mb-4 ${theme.accent}`}>
+        <h2 className={`text-xs font-bold uppercase tracking-[0.2em] mb-4 ${theme.textMuted}`}>
           Selections
         </h2>
         <h3 className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 ${theme.text}`}>
-          Featured <span className={`${theme.accent} italic`}>Projects</span>
+          Featured <span className="italic font-light">Projects</span>
         </h3>
         <p className={`text-lg mb-12 ${theme.textMuted} max-w-xl`}>
           A curated selection of my most impactful work, ranging from enterprise ML platforms 
@@ -208,7 +208,7 @@ const ProjectContent = ({ project, isActive, slideIndex, isSlideshowActive, them
           ))}
         </div>
         
-        <h4 className={`font-bold text-white transition-all duration-500 ${isSmall ? 'text-xl md:text-2xl' : 'text-2xl md:text-4xl'} ${isActive ? 'mb-4' : 'mb-2'}`}>
+        <h4 className={`font-bold transition-colors duration-300 text-neutral-300 group-hover:text-white ${isSmall ? 'text-xl md:text-2xl' : 'text-2xl md:text-4xl'} ${isActive ? 'mb-4' : 'mb-2'}`}>
           {project.title}
         </h4>
         
@@ -223,7 +223,7 @@ const ProjectContent = ({ project, isActive, slideIndex, isSlideshowActive, them
           }}
           className={`w-fit flex items-center gap-2 text-white font-bold text-sm transition-opacity duration-500 ${isActive ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         >
-          View Case Study <ArrowUpRight size={18} className="text-orange-500" />
+          View Case Study <ArrowUpRight size={18} className="text-white/80 group-hover:text-white" />
         </MagneticButton>
       </div>
 

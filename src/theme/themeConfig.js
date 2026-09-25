@@ -3,50 +3,50 @@ const themeConfig = {
     bg: "bg-[#FAFAFA]",
 
     // TEXT
-    text: "text-neutral-800",
-    textMuted: "text-neutral-600",
+    text: "text-neutral-900",
+    textMuted: "text-neutral-500",
 
     // SURFACES
     cardBg: "bg-white",
     cardBorder: "border-neutral-200",
 
     // BUTTONS
-    btnPrimary: "bg-[#0A0A0A] text-white border-[#0A0A0A]",
-    btnSecondary: "bg-transparent text-neutral-800 border-neutral-300 hover:bg-neutral-200/50",
+    btnPrimary: "bg-black/10 text-neutral-900 border border-black/15 hover:bg-black/15 transition-all backdrop-blur-md",
+    btnSecondary: "bg-transparent text-neutral-700 border border-black/10 hover:bg-black/5 hover:text-neutral-900 transition-all backdrop-blur-md",
 
     // NAV
-    navBg: "bg-white/70",
+    navBg: "bg-white/45 backdrop-blur-2xl backdrop-saturate-180",
 
-    // ACCENT
-    accent: "text-[#C2410C]",
-    accentBg: "bg-[#C2410C]",
-    accentHover: "hover:bg-[#9A3412]",
-    accentBorderHover: "hover:border-[#C2410C]/50",
-    accentShadow: "shadow-[#C2410C]/30",
+    // ACCENT (Clean monochrome)
+    accent: "text-neutral-600",
+    accentBg: "bg-black/10 text-neutral-900",
+    accentHover: "hover:bg-black/15",
+    accentBorderHover: "hover:border-neutral-400",
+    accentShadow: "shadow-black/10",
 
-    navHoverBg: "hover:bg-orange-100/70",
+    navHoverBg: "hover:bg-black/5",
     navHoverText: "hover:text-neutral-900",
-    navActiveBg: "bg-orange-200/60",
+    navActiveBg: "bg-black/10",
   },
 
   dark: {
     bg: "bg-[#0A0A0A]",
-    text: "text-neutral-100",
+    text: "text-white",
     textMuted: "text-neutral-400",
     cardBg: "bg-[#1A1A1A]/80",
     cardBorder: "border-neutral-800",
 
     // BUTTONS
-    btnPrimary: "bg-white text-[#0A0A0A] border-white",
-    btnSecondary: "bg-transparent text-neutral-200 border-neutral-700 hover:bg-neutral-800/50",
+    btnPrimary: "bg-white/10 border border-white/15 text-neutral-200 hover:bg-white/20 hover:text-white transition-all backdrop-blur-md",
+    btnSecondary: "bg-transparent text-neutral-300 border border-white/10 hover:bg-white/10 hover:text-white transition-all backdrop-blur-md",
 
-    navBg: "bg-[#1A1A1A]/95",
-    accent: "text-orange-500",
-    accentBg: "bg-orange-500",
-    accentHover: "hover:bg-orange-600",
-    accentBorderHover: "hover:border-orange-500/50",
-    accentShadow: "shadow-orange-500/30",
-    navHoverBg: "hover:bg-neutral-800/60",
+    navBg: "bg-neutral-950/45 backdrop-blur-2xl backdrop-saturate-180",
+    accent: "text-neutral-400",
+    accentBg: "bg-white/10 text-white",
+    accentHover: "hover:bg-white/20",
+    accentBorderHover: "hover:border-white/30",
+    accentShadow: "shadow-white/10",
+    navHoverBg: "hover:bg-white/10",
     navHoverText: "hover:text-neutral-100",
   },
 };

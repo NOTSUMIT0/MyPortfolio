@@ -18,9 +18,7 @@ import { useNavigate } from "react-router-dom";
 const About = ({ isSummary = false, theme, isDarkMode }) => {
   const navigate = useNavigate();
   return (
-    <section
-      className={`py-24 px-6 ${isDarkMode ? "bg-black/20" : "bg-white/30"} backdrop-blur-3xl`}
-    >
+    <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <Reveal>
           <div className="grid md:grid-cols-12 gap-12 items-start">

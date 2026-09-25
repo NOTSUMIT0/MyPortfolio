@@ -3,9 +3,7 @@ import { useEffect, useState, useRef, useCallback } from "react";
 const SECTIONS_MAP = {
   Hero: "Overview",
   About: "About",
-  Skills: "Skills",
   Projects: "Projects",
-  Contact: "Contact",
 };
 const SECTIONS = Object.keys(SECTIONS_MAP);
 

@@ -46,7 +46,7 @@ const ALL_PROJECTS = [
   {
     id: "stc",
     category: "featured",
-    title: "STC (Student Teaching Companion)",
+    title: "STC : STUDENT TEACHING COMPANION",
     desc: "A comprehensive web application designed to be an all-in-one learning companion for students.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript"],
     image: stc_landing,
@@ -56,7 +56,7 @@ const ALL_PROJECTS = [
     year: "2024",
     role: "Full Stack Developer",
     tools: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript", "HTML5", "CSS", "Javascript"],
-    overview: "Student Platform (STC) is a comprehensive web application designed to be an all-in-one learning companion for students. It acts as a centralized hub that helps students organize their self-learning journey by providing structured learning roadmaps, productivity tools, resource management, and a supportive community. It aims to solve common student challenges like information overload, lack of direction, and disorganization.",
+    overview: "Student Platform STC is a comprehensive web application designed to be an all-in-one learning companion for students. It acts as a centralized hub that helps students organize their self-learning journey by providing structured learning roadmaps, productivity tools, resource management, and a supportive community. It aims to solve common student challenges like information overload, lack of direction, and disorganization.",
     challenge: "Students often struggle with information overload, disorganized study materials, and a lack of structured guidance when trying to master new subjects independently.",
     solution: "Developed an integrated platform that combines learning roadmaps, personal productivity tools, a resource hub, and community forums into a single unified dashboard.",
     contributions: [
