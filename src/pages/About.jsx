@@ -16,16 +16,16 @@ import Metro from "../assets/games/Metro.jpg";
 import rdr2 from "../assets/games/rdr2.jpg";
 
 // Sketches Assets
-import sketch1 from "../assets/sketches/1.jpg";
-import sketch2 from "../assets/sketches/2.jpg";
-import sketch3 from "../assets/sketches/3.jpg";
-import sketch4 from "../assets/sketches/4.jpg";
-import sketch5 from "../assets/sketches/5.jpg";
-import sketch6 from "../assets/sketches/6.jpg";
-import sketch7 from "../assets/sketches/7.jpg";
-import sketch8 from "../assets/sketches/8.jpg";
-import sketch9 from "../assets/sketches/9.jpg";
-import sketch10 from "../assets/sketches/10.jpg";
+import sketch1 from "../assets/Sketches/1.jpg";
+import sketch2 from "../assets/Sketches/2.jpg";
+import sketch3 from "../assets/Sketches/3.jpg";
+import sketch4 from "../assets/Sketches/4.jpg";
+import sketch5 from "../assets/Sketches/5.jpg";
+import sketch6 from "../assets/Sketches/6.jpg";
+import sketch7 from "../assets/Sketches/7.jpg";
+import sketch8 from "../assets/Sketches/8.jpg";
+import sketch9 from "../assets/Sketches/9.jpg";
+import sketch10 from "../assets/Sketches/10.jpg";
 
 const sketches = [
   sketch1, sketch2, sketch3, sketch4, sketch5, 
