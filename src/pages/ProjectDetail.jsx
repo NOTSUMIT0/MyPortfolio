@@ -94,6 +94,26 @@ const ProjectDetail = ({ theme, isDarkMode }) => {
                     </div>
                   </MagneticButton>
                 )}
+                {project.androidSetupUrl && (
+                  <MagneticButton 
+                    onClick={() => window.open(project.androidSetupUrl, "_blank")} 
+                    className="px-[40px] py-[18px] text-[1.15rem] rounded-[30px] bg-white text-black font-bold flex items-center justify-center transition-colors hover:bg-neutral-200"
+                  >
+                    <div className="flex items-center gap-2">
+                      Android <ExternalLink size={18} />
+                    </div>
+                  </MagneticButton>
+                )}
+                {project.desktopSetupUrl && (
+                  <MagneticButton 
+                    onClick={() => window.open(project.desktopSetupUrl, "_blank")} 
+                    className="px-[40px] py-[18px] text-[1.15rem] rounded-[30px] bg-white text-black font-bold flex items-center justify-center transition-colors hover:bg-neutral-200"
+                  >
+                    <div className="flex items-center gap-2">
+                      Desktop <ExternalLink size={18} />
+                    </div>
+                  </MagneticButton>
+                )}
                 {project.repo && (
                   <SpecularButton 
                     radius={30}
@@ -245,6 +265,20 @@ const ProjectDetail = ({ theme, isDarkMode }) => {
                        {detail.image && (
                          <div className="w-full bg-[#f8f8f8] p-4 rounded-xl border border-neutral-200 shadow-sm">
                            <img src={detail.image} alt={detail.title} className="w-full h-auto rounded-lg shadow-sm border border-neutral-100" />
+                         </div>
+                       )}
+                       {detail.images && (
+                         <div className="w-full flex flex-col md:flex-row gap-4">
+                           {detail.images.desktop && (
+                             <div className="w-full md:w-[70%] bg-[#f8f8f8] p-4 rounded-xl border border-neutral-200 shadow-sm">
+                               <img src={detail.images.desktop} alt={`${detail.title} Desktop`} className="w-full h-auto rounded-lg shadow-sm border border-neutral-100" />
+                             </div>
+                           )}
+                           {detail.images.mobile && (
+                             <div className="w-full md:w-[30%] bg-[#f8f8f8] p-4 rounded-xl border border-neutral-200 shadow-sm flex justify-center items-center">
+                               <img src={detail.images.mobile} alt={`${detail.title} Mobile`} className="max-h-[500px] w-auto rounded-lg shadow-sm border border-neutral-100" />
+                             </div>
+                           )}
                          </div>
                        )}
                     </div>

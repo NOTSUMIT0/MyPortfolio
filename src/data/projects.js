@@ -44,6 +44,100 @@ import pc_3 from "../assets/pychain/3.png";
 
 const ALL_PROJECTS = [
   {
+    id: "daymark",
+    category: "featured",
+    title: "DAYMARK : PRODUCTIVITY WORKSPACE",
+    desc: "A powerful, privacy-first productivity workspace designed to seamlessly manage daily tasks, long-term roadmaps, and blueprints.",
+    tags: ["React.js", "Tauri", "Mobile", "Desktop", "Javascript"],
+    image: "/assets/DayMark/for desktop/Today.png",
+    repo: "https://github.com/NOTSUMIT0/Daymark",
+
+    year: "2026",
+    role: "Full Stack Developer",
+    tools: ["React.js", "Tauri", "Javascript", "Tailwind CSS"],
+    overview: "Daymark is an all-in-one cross-platform application (Android and Desktop) designed to give you a complete view of your life's plans. It goes beyond simple to-do lists by integrating your daily tasks with comprehensive roadmaps and blueprints, keeping you focused on the big picture.",
+    challenge: "The problem with most productivity apps is they only focus on tasks. To truly maintain focus and create a better view of a plan, you need everything in one place—not just tasks, but a full map of roadmaps, blueprints, and long-term goals.",
+    solution: "Developed a unified workspace that bridges the gap between daily execution and long-term planning. By bringing tasks, roadmaps, and blueprints into a single, cohesive view, users can maintain their focus and track progress effectively across both mobile and desktop devices.",
+    contributions: [
+      "Built cross-platform support using Tauri for desktop and modern web technologies for mobile",
+      "Designed a seamless UI that adapts perfectly to both large desktop screens and compact mobile displays",
+      "Implemented the core Today page, Roadmaps, and Blueprints features",
+      "Ensured a privacy-first architecture with localized data management"
+    ],
+    details: [
+      {
+        title: "The Today Page",
+        content: "A centralized hub to maintain daily focus. It shows exactly what needs to be done today while keeping your broader goals in perspective.",
+        points: [
+          "Daily task tracking",
+          "Focus-oriented dashboard",
+          "Quick access to active blueprints"
+        ],
+        images: {
+          desktop: "/assets/DayMark/for desktop/Today.png",
+          mobile: "/assets/DayMark/for mobile/Today.jpg"
+        }
+      },
+      {
+        title: "Full Map of Roadmaps",
+        content: "Step back and view your entire journey. The roadmaps feature allows you to visualize long-term plans and track your overall progress across multiple domains.",
+        points: [
+          "Visual timeline of goals",
+          "Milestone tracking",
+          "Comprehensive progress overview"
+        ],
+        images: {
+          desktop: "/assets/DayMark/for desktop/Roadmaps.png",
+          mobile: "/assets/DayMark/for mobile/Roadmaps.jpg"
+        }
+      },
+      {
+        title: "Detailed Blueprints & Tasks",
+        content: "Break down complex projects into manageable, actionable blueprints. Everything required to maintain focus and execute your plan is organized here.",
+        points: [
+          "In-depth project breakdown",
+          "Structured planning tools",
+          "Seamless integration with daily tasks"
+        ],
+        images: {
+          desktop: "/assets/DayMark/for desktop/Tasks.png",
+          mobile: "/assets/DayMark/for mobile/Tasks.jpg"
+        }
+      }
+    ],
+    features: [
+      "Cross-platform capability (Android & Desktop)",
+      "Today Page for immediate focus",
+      "Comprehensive Roadmaps for long-term vision",
+      "Project Blueprints for structured planning",
+      "Privacy-first architecture"
+    ],
+    outcomes: [
+      "Delivered a unified application across Android and Desktop",
+      "Created a holistic view for planning and execution",
+      "Solved the disjointed experience of using multiple apps for tasks and roadmaps"
+    ],
+    team: [
+      { name: "Sumit Kumar", role: "Developer" }
+    ],
+    gallery: [
+      "/assets/DayMark/for desktop/Today.png",
+      "/assets/DayMark/for mobile/Today.jpg",
+      "/assets/DayMark/for desktop/Roadmaps.png",
+      "/assets/DayMark/for mobile/Roadmaps.jpg",
+      "/assets/DayMark/for desktop/Tasks.png",
+      "/assets/DayMark/for mobile/Tasks.jpg",
+      "/assets/DayMark/for desktop/Files.png",
+      "/assets/DayMark/for desktop/Notes.png",
+      "/assets/DayMark/for desktop/Reports.png",
+      "/assets/DayMark/for desktop/Settings.png"
+    ],
+    demoUrl: null,
+    androidSetupUrl: "https://github.com/NOTSUMIT0/Daymark/releases/download/v1.0.0/app-release.apk",
+    desktopSetupUrl: "https://github.com/NOTSUMIT0/Daymark/releases/download/v1.0.0/Daymark_1.0.0_x64-setup.exe",
+    nextProject: "stc",
+  },
+  {
     id: "stc",
     category: "featured",
     title: "STC : STUDENT TEACHING COMPANION",
