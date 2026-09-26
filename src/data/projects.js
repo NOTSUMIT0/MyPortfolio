@@ -44,6 +44,87 @@ import pc_3 from "../assets/pychain/3.png";
 
 const ALL_PROJECTS = [
   {
+    id: "altair",
+    category: "featured",
+    title: "ALTAIR : AI CONVERSION PLATFORM",
+    desc: "A desktop-first AI document conversion platform that transforms documents, media, and YouTube content into structured, AI-ready Markdown.",
+    tags: ["React.js", "Electron", "FastAPI", "AI", "Python"],
+    image: "/assets/Altair/1.png",
+    repo: "https://github.com/NOTSUMIT0/Altair",
+
+    year: "2026",
+    role: "Full Stack Developer",
+    tools: ["React.js", "Electron", "FastAPI", "MarkItDown", "Whisper", "Tesseract OCR", "Python"],
+    overview: "Altair is a powerful desktop-first AI platform built to convert nearly any format—including PDFs, images, audio, video, and YouTube URLs—into structured, searchable, and AI-ready Markdown. By leveraging advanced local AI models like Whisper for transcription and Tesseract for OCR, it guarantees complete privacy by keeping all processing directly on your machine.",
+    challenge: "Knowledge workers and students often struggle with scattered information locked inside videos, scanned PDFs, and audio recordings. Converting this media into usable, searchable text typically requires multiple disjointed, cloud-based tools that can compromise user privacy.",
+    solution: "Engineered a unified, local-first Electron and FastAPI application. Altair orchestrates advanced AI pipelines (OCR, Whisper transcriptions, and Microsoft MarkItDown) to effortlessly process complex files into clean Markdown, complete with AI summaries and structured study notes.",
+    contributions: [
+      "Architected a cross-platform desktop application using React and Electron",
+      "Developed a robust local AI backend with FastAPI, integrating Whisper and Tesseract OCR",
+      "Engineered automated pipelines to generate AI summaries and structured study notes",
+      "Ensured a completely local-first architecture for maximum data privacy"
+    ],
+    details: [
+      {
+        title: "Universal Document Conversion",
+        content: "Effortlessly convert standard documents, scanned PDFs, and images into structured Markdown using Microsoft MarkItDown and OCRmyPDF.",
+        points: [
+          "Seamless PDF & Image OCR",
+          "Rich Markdown export",
+          "Local-first document processing"
+        ],
+        image: "/assets/Altair/2.png"
+      },
+      {
+        title: "Advanced Media Transcription",
+        content: "Unlock the value in audio and video files. Altair uses local Whisper models to generate highly accurate transcriptions from local media and YouTube URLs.",
+        points: [
+          "Audio & Video to text",
+          "Direct YouTube transcription",
+          "High accuracy local Whisper integration"
+        ],
+        image: "/assets/Altair/3.png"
+      },
+      {
+        title: "AI Summaries & Study Notes",
+        content: "Go beyond raw text. The platform intelligently processes transcriptions to generate concise AI summaries, tailored study notes, and interview prep materials.",
+        points: [
+          "Automated study note generation",
+          "Interview preparation outlines",
+          "Searchable conversion history"
+        ],
+        image: "/assets/Altair/4.png"
+      }
+    ],
+    features: [
+      "Document to Markdown & PDF OCR",
+      "Audio/Video transcription with Whisper",
+      "YouTube transcript generation",
+      "AI Summaries & Study Notes",
+      "Local-first, privacy-focused processing",
+      "Markdown, TXT, and JSON exports"
+    ],
+    outcomes: [
+      "Eliminated reliance on expensive, cloud-based conversion tools",
+      "Streamlined research workflows for students and professionals",
+      "Maintained 100% user data privacy through local processing"
+    ],
+    team: [
+      { name: "Sumit Kumar", role: "Full Stack Developer" }
+    ],
+    gallery: [
+      "/assets/Altair/1.png",
+      "/assets/Altair/2.png",
+      "/assets/Altair/3.png",
+      "/assets/Altair/4.png",
+      "/assets/Altair/5.png",
+      "/assets/Altair/6.png"
+    ],
+    demoUrl: null,
+    desktopSetupUrl: "https://github.com/NOTSUMIT0/Altair/releases/tag/v2.0.0",
+    nextProject: "daymark",
+  },
+  {
     id: "daymark",
     category: "featured",
     title: "DAYMARK : PRODUCTIVITY WORKSPACE",
