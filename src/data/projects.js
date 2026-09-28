@@ -50,6 +50,7 @@ const ALL_PROJECTS = [
     desc: "A desktop-first AI document conversion platform that transforms documents, media, and YouTube content into structured, AI-ready Markdown.",
     tags: ["React.js", "Electron", "FastAPI", "AI", "Python"],
     image: "/assets/Altair/1.png",
+    videoUrl: "/assets/Project-Videos/Altair.mp4",
     repo: "https://github.com/NOTSUMIT0/Altair",
 
     year: "2026",
@@ -131,6 +132,7 @@ const ALL_PROJECTS = [
     desc: "A powerful, privacy-first productivity workspace designed to seamlessly manage daily tasks, long-term roadmaps, and blueprints.",
     tags: ["React.js", "Tauri", "Mobile", "Desktop", "Javascript"],
     image: "/assets/DayMark/for desktop/Today.png",
+    videoUrl: "/assets/Project-Videos/DayMark.mp4",
     repo: "https://github.com/NOTSUMIT0/Daymark",
 
     year: "2026",
@@ -225,6 +227,7 @@ const ALL_PROJECTS = [
     desc: "A comprehensive web application designed to be an all-in-one learning companion for students.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript"],
     image: stc_landing,
+    videoUrl: "/assets/Project-Videos/STC.mp4",
     repo: "https://github.com/NOTSUMIT0/STC",
 
     // ── Case-study detail fields ──
@@ -313,6 +316,7 @@ const ALL_PROJECTS = [
     desc: "A hybrid Intrusion Detection System combining signature-based and anomaly-based techniques with a real-time SIEM dashboard.",
     tags: ["Python", "FastAPI", "WebSockets", "Javascript"],
     image: siem_dashboard,
+    videoUrl: "/assets/Project-Videos/IDS.mp4",
     repo: "https://github.com/NOTSUMIT0/SIEM-Based-Intrusion-Detection-System",
 
     // ── Case-study detail fields ──
@@ -418,6 +422,7 @@ const ALL_PROJECTS = [
     desc: "A data-driven system designed to predict and identify students at risk of dropping out by analyzing academic, behavioral, and performance-related data.",
     tags: ["React.js", "Javascript", "HTML5", "CSS"],
     image: signup_page,
+    videoUrl: "/assets/Project-Videos/FutureGuard.mp4",
     repo: "https://github.com/NOTSUMIT0/future-guard",
 
     // ── Case-study detail fields ──
@@ -543,6 +548,7 @@ const ALL_PROJECTS = [
     desc: "A premium, high-end e-commerce marketplace featuring a professional dark-themed UI, cinematic authentication, and dynamic flash deals.",
     tags: ["Python", "Flask", "PostgreSQL", "Tailwind CSS"],
     image: fm_landing,
+    videoUrl: "/assets/Project-Videos/FlaskMarket.mp4",
     repo: "https://github.com/NOTSUMIT0/FlaskMarket",
 
     year: "2025",
@@ -675,6 +681,7 @@ const ALL_PROJECTS = [
     desc: "A 2D top-down car racing game built with Python and Pygame, featuring collision detection and keyboard controls.",
     tags: ["Python", "Pygame", "Game Dev"],
     image: cr_1,
+    videoUrl: "/assets/Project-Videos/2D-Car-Racing.mp4",
     repo: "https://github.com/NOTSUMIT0/CAR-RACING",
 
     year: "2025",

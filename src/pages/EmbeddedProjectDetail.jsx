@@ -4,6 +4,7 @@ import { X, ChevronLeft, ChevronRight, Github, ExternalLink } from "lucide-react
 import Reveal from "../components/ui/Reveal";
 import MagneticButton from "../components/ui/MagneticButton";
 import SpecularButton from "../components/ui/SpecularButton";
+import VideoPlayer from "../components/VideoPlayer";
 import EMBEDDED_PROJECTS from "../data/embeddedProjects";
 
 /* Keyed lookup */
@@ -171,13 +172,8 @@ const EmbeddedProjectDetail = ({ theme, isDarkMode }) => {
           <div className="flex-1 max-w-4xl">
             {/* Video or Gallery */}
             {project.video ? (
-              <div className="w-full bg-[#f4f4f4] rounded-2xl flex items-center justify-center mb-24 overflow-hidden relative border border-neutral-200 shadow-sm p-4">
-                <video
-                  src={project.video}
-                  controls
-                  className="w-full max-h-[75vh] object-contain rounded-xl shadow-lg"
-                  poster={project.images && project.images.length > 0 ? project.images[0] : undefined}
-                />
+              <div className="mb-24 drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)]">
+                <VideoPlayer src={project.video} poster={project.images && project.images.length > 0 ? project.images[0] : undefined} />
               </div>
             ) : (
               <div className="w-full aspect-[16/10] bg-[#f4f4f4] rounded-2xl flex items-center justify-center mb-24 overflow-hidden relative border border-neutral-200 shadow-sm">

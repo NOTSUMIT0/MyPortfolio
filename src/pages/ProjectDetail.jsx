@@ -4,6 +4,7 @@ import { X, ChevronLeft, ChevronRight, Github, ExternalLink } from "lucide-react
 import Reveal from "../components/ui/Reveal";
 import MagneticButton from "../components/ui/MagneticButton";
 import SpecularButton from "../components/ui/SpecularButton";
+import VideoPlayer from "../components/VideoPlayer";
 import { PROJECT_DETAILS } from "../data/projects";
 import macbookMockup from "../assets/projects-images/macbook.png";
 
@@ -191,15 +192,12 @@ const ProjectDetail = ({ theme, isDarkMode }) => {
 
           {/* Right Main Content */}
           <div className="flex-1 max-w-4xl">
-            {/* Video Placeholder */}
-            <div className="w-full aspect-[16/10] bg-[#f4f4f4] rounded-2xl flex items-center justify-center mb-24 overflow-hidden relative border border-neutral-200 shadow-sm">
-               <div className="absolute inset-0 flex flex-col items-center justify-center group cursor-pointer">
-                  <div className="w-20 h-20 rounded-full bg-white shadow-xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110">
-                    <svg className="w-8 h-8 text-black ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                  </div>
-                  <span className="text-xs font-bold tracking-[0.2em] text-neutral-400 uppercase">Showcase Video Coming Soon</span>
-               </div>
-            </div>
+            {/* Video Player (if available) */}
+            {project.videoUrl && (
+              <div className="mb-24 drop-shadow-[0_20px_30px_rgba(0,0,0,0.15)]">
+                <VideoPlayer src={project.videoUrl} poster={project.image} />
+              </div>
+            )}
 
             {/* OVERVIEW */}
             <div id="overview" className="mb-24 scroll-mt-32">
