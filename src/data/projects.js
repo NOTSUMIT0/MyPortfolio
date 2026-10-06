@@ -216,7 +216,7 @@ const ALL_PROJECTS = [
       "/assets/DayMark/for desktop/Settings.png"
     ],
     demoUrl: null,
-    androidSetupUrl: "https://github.com/NOTSUMIT0/Daymark/releases/download/v1.0.0/app-release.apk",
+    androidSetupUrl: "https://github.com/NOTSUMIT0/Daymark/releases/download/v1.0.0/Daymark-app-release.apk",
     desktopSetupUrl: "https://github.com/NOTSUMIT0/Daymark/releases/download/v1.0.0/Daymark_1.0.0_x64-setup.exe",
     nextProject: "stc",
   },
